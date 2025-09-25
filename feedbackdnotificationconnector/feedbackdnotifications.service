@@ -1,0 +1,15 @@
+[Unit]
+Description=Feedbackd Notifications Bridge
+After=graphical-session.target
+Wants=graphical-session.target
+
+[Service]
+Type=simple
+
+ExecStart=python3 /usr/local/bin/feedbackdnotifications.py
+Restart=always
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=%t/bus
+Environment=XDG_RUNTIME_DIR=%t
+
+[Install]
+WantedBy=default.target

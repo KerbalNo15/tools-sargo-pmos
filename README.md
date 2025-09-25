@@ -1,0 +1,7 @@
+**My postmarketOS Experiments**
+
+This is a little repo where I put things I make for my Google Pixel 3a running postmarketOS.
+
+***Description of Utilities***
+- Feedbackd Notification Connector is a utility for connecting user D-bus notifications to feedbackd. Created to make Telegram Desktop messages vibrate (sort of an important phone function)
+
