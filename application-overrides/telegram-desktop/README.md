@@ -1,6 +1,7 @@
 **Telegram Desktop**
 
 Actually works really well on mobile. List of things you (probably) want to do:
+- Settings -> Notifications and Sounds = uncheck "Draw attention to the window"
 - Settings -> Interface Scale = 330%
 - Settings -> Advanced -> When window closed = Run in the background
 - Settings -> Advanced -> Window title bar = uncheck "Use Qt window frame"
