@@ -14,3 +14,8 @@ focus but closing it crashes the shell session. That is to say, figuring out how
 The profile I've posted here is optimized for ***audio quality**, not ***volume***. It caters to the poor bass response of the included speakers. ***I can't
 guarantee that it will not cause damage to the speakers if played too loudly, nor that you'll like it more than the sound without processing. Use it at your
 own risk.***
+
+---
+***Audio Crackling***
+
+Is caused by Easy Effects. I suspect it's an issue with Pipewire latency. Might be fixed by adding a few ms of compensatory delay, not sure.
