@@ -18,4 +18,5 @@ own risk.***
 ---
 ***Audio Crackling***
 
-Is caused by Easy Effects. I suspect it's an issue with Pipewire latency. Might be fixed by adding a few ms of compensatory delay, not sure.
+Is caused by Easy Effects. I suspect it's an issue with Pipewire latency. Might be fixed by adding a few ms of compensatory delay, not sure. Can be resolved by
+quitting the EasyEffects background process from the notification shade and restarting the app.
