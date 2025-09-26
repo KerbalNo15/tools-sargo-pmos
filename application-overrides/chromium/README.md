@@ -39,7 +39,8 @@ to pick up the override. I had no end of trouble making
 GNOME recognize my changes. If you don't feel
 comfortable making all these changes, try copying
 chromium.desktop from this repo to
-~/.local/share/applications
+"~/.local/share/applications".
+
 It may not work if Chrome changes something, but it's
 worth a shot at least.
 You may also need to tweak the scale factor, but you
@@ -73,6 +74,6 @@ which, as the name implies, opens new tabs in new windows.
 
 ***Settings***
 
-Appearance -> Theme = classic
-Appearance -> Page zoom = 125%
-Performance -> Memory Saver = Maximum
+- Appearance -> Theme = classic
+- Appearance -> Page zoom = 125%
+- Performance -> Memory Saver = Maximum
