@@ -8,8 +8,8 @@ ecosystem of tools for handling VoLTE support on Linux. What follows is a summar
 
 ***The high-level control flow***
 
-Something that doesn't seem to be well-understood is that the modem is actually responsible for enabling VoLTE. We don't need a userspace daemon that passes
-messages to the cell network in order to configure some sort of VOIP connection- that's not actually how it works at all. There is some amount of configuration that needs to be handled in userspace, but
+Something that doesn't seem to be well-understood is that the modem is actually responsible for enabling VoLTE. It's not some sort of userspace VOIP implementation.
+There is some amount of configuration that needs to be handled in userspace, but
 it's not nearly as bad as it looks. On Qualcomm devices (like the Pixel 3a), The modem is the primary responsible party for handling VoLTE. With the advent of
 the 81voltd (please don't stop reading, I promise it works,) VoLTE support is almost a plug-and play experience on postmarketOS. If some conditions are satisfied.
 They weren't for me, and they might not be for you either; trying to troubleshoot what's wrong is a nightmare. There's very little documentation yet. What finally
