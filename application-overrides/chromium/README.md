@@ -8,7 +8,9 @@ means that you have access to PWAs (progressive web
 apps) which help to fill the current application gap
 on Linux phones. I made several configuration changes
 to Chromium to optimize it for mobile, I hope you can
-benefit from some or all of them.
+benefit from some or all of them. Someday, I might
+work on packaging ungoogled-chromium for Alpine and
+making some UI tweaks.
 
 ---
 
@@ -66,12 +68,17 @@ GPU rasterization, but scrolling felt smoother to me.
 
 I wish Chromium had a robust way of handling tabs in a form
 factor like this. It really doesn't, so I'm working on
-alternatives for the time being. Currently, I've
-settled on the extension **"New tab, New Window"**
-which, as the name implies, opens new tabs in new windows.
+alternatives for the time being. Options:
+- The tab search widget, which is enabled by default. It's the little dropdown arrow to the left of your leftmost tab.
+- The extension **"New tab, New Window"** which, as the name implies, opens new tabs in new windows.
+
 
 ***Settings***
 
-- Appearance -> Theme = classic
-- Appearance -> Page zoom = 125%
+- Privacy and security -> Third-party cookies = block
 - Performance -> Memory Saver = Maximum
+- Appearance -> Theme = classic
+- Appearance -> Show tab preview images = no
+- Appearance -> Page zoom = 125%
+- Search engine -> (my preference) Brave search.
+- On startup -> "Continue where you left off"
