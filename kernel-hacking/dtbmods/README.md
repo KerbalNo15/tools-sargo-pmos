@@ -52,3 +52,18 @@ arch/arm64/boot/dts/qcom/sdm670.dtsi though there are others specifically for th
 I've experimented with GPU frequency targets to try and improve responsiveness. You can work on whatever you'd like, of course.
 I hope that someday the fingerprint sensor works, as well as the camera focus motor; I don't know whether those need work to be done
 on the DTB or not.
+
+
+***The DTB File in this Repo***
+May be outdated when you find it! Don't just install it! At the time of writing, the main changes from upstream are:
+- I'm trying to get QSEECOM working, so that I can get the fingerprint sensor driver working, so that I can hack support into fprintd.
+As of right now, it does not work. In fact, it may be worse off than the unmodified DTB.
+- The GPU frequency targets have been adjusted. The lowest clock is 125MHZ, much lower than stock. Importantly, it has an intentionally
+restrictive max kbps at that frequency level. The intention of this is to have the GPU drawing less power to render static content, but
+immediately boost out of that power level once things start happening on screen. The next power level is 190MHZ, 10MHZ above the stock
+base clock speed. After that, it immediately boosts to 320MHZ, then 355, then 430. GNOME shell on mobile takes too much GPU muscle to
+be stuck with the stock clock targets, unfortunately (imo; you might think it's fine.)
+
+If you do want to install it, just put it in the same directory as updatedtb-phone.sh and run that script as root. It will overwrite the
+dtb in the boot directory and update the boot image. This script reboots your phone, make sure to save your work. If you want to go back
+to stock, **You will need to make a backup of the stock dtb or reflash the kernel with pmbootstrap**.
