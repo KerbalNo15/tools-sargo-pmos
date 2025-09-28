@@ -53,13 +53,11 @@ This is vanilla, desktop Chromium running on a phone.
 Needless to say the experience could use a little
 help. Here's what I've changed in chrome://flags:
 - Override software rendering list: enabled
-- Smooth Scrolling: enabled
 - Overlay Scrollbars: enabled
 - GPU Rasterization: enabled
 - Touch UI Layout: enabled
 - Desktop PWA Borderless: enabled
 - Tab Scrolling: enabled
-- Enable Experimental Prediction for Scroll Events: disabled
 
 I'm still evaluating the battery impact from enabling
 GPU rasterization, but scrolling felt smoother to me.
