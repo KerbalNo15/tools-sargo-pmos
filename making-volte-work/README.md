@@ -29,7 +29,7 @@ If you didn't test phone calls before flashing postmarketOS:
 This used to be an issue with Android ROMs back in the day! If you remember when ROMs would instruct you to make sure VoLTE works on your phone BEFORE installing
 the ROM, this may have been the same issue. Stock Android had the tools to install new profiles on the modem, and it does so automatically.
 
-I flashed stock android back to the phone. After the initial setup, put "*#*#4636*#*#" into the dialer. This brings up a debug menu. Click the top option, labeled
+I flashed stock android back to the phone. After the initial setup, put "\*#\*#4636\*#\*#" into the dialer. This brings up a debug menu. Click the top option, labeled
 something like "Phone information", and you can see all the debug information for the SIM and radio. Click the menu button in the top right corner, and click
 "IMS Service Status". Make sure that "Voice over LTE" says "Available". If it doesn't, go to SIM settings in the Settings app and make sure that VoLTE is turned on.
 You could toggle it off and back on again to make sure, and make a test call to be extremely confident.
